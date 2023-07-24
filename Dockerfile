@@ -1,6 +1,8 @@
 FROM node:16-alpine AS build
 
-LABEL org.opencontainers.image.source https://github.com/Yimura/GTAV-NativeDB
+ARG REPOSITORY
+
+LABEL org.opencontainers.image.source https://github.com/${REPOSITORY}
 
 WORKDIR /build
 
