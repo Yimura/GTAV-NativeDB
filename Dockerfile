@@ -1,9 +1,5 @@
 FROM node:16-alpine AS build
 
-ARG REPOSITORY
-
-LABEL org.opencontainers.image.source https://github.com/${REPOSITORY}
-
 WORKDIR /build
 
 COPY package.json .

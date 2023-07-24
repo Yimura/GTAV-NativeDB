@@ -29,5 +29,5 @@ jobs:
         with:
           push: true
           tags: ghcr.io/${{ env.OWNER_LC }}:latest
-          build-args: |
-            REPOSITORY=${{ github.repository }}
+          labels: |
+            org.opencontainers.image.source=https://github.com/${{ github.repository }}
